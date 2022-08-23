@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'v-italic';
+  src: url('./fonts/Valkyrie-ExtendedItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'v-regular';
+  src: url('./fonts/Valkyrie-Regular.ttf') format('truetype');
+}
+
+$color1: #EEE7E1;
+$color2: white;
+
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 1500px;
+}
+
+.homepage-container {
+  background-color: $color1;
+  height: 100%;
+
+  .main-wrapper {
+    background-color: $color2;
+    width: 60%;
+    margin: auto;
+  }
+}
