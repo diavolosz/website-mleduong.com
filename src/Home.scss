@@ -6,12 +6,16 @@
   font-family: 'butler-regular';
   src: url('./fonts/Butler_Regular_Stencil.otf')
 }
+@import './styles/base/reset.scss';
+
 
 $color1: #EEE7E1;
 $color2: white;
 $color3: #271A26;
 
-
+.homepage-wrapper {
+  height: 100%;
+}
 
 .homepage-container {
   background-color: $color1;

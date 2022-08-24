@@ -7,22 +7,31 @@ import SkillsBlock from './components/ContentBlocks/02_Skills'
 import AboutMeBlock from './components/ContentBlocks/03_AboutMe'
 import PastProjectbBlock from './components/ContentBlocks/04_PastProject'
 
+
+import { useContext } from 'react'
+import { ThemeContext } from './context/ThemeContext'
+
+
 function App() {
+  const { theme } = useContext(ThemeContext)
+
   return (
-    <div className="homepage-container">
-      <div className='main-wrapper'>
-        <SideNavBar />
+    <div className={`homepage-wrapper ${theme}`}>
+      <div className="homepage-container background-secondary">
+        <div className='main-wrapper background'>
+          <SideNavBar />
 
-        <article className='main-body-article'>
-          <ArticleNavBar />
-          <MainIntroBlock />
-          <SkillsBlock />
-          <AboutMeBlock />
-          <PastProjectbBlock />
-        </article>
+          <article className='main-body-article'>
+            <ArticleNavBar />
+            <MainIntroBlock />
+            <SkillsBlock />
+            <AboutMeBlock />
+            <PastProjectbBlock />
+          </article>
 
-      </div>
+        </div>
         <FooterSection />
+      </div>
     </div>
   );
 }

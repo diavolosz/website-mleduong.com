@@ -4,14 +4,18 @@ import './index.css';
 import Home from './Home';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { ThemeProvider } from './context/ThemeContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Home />} />
-    </Routes>
-  </BrowserRouter>
+  <ThemeProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
+  </ThemeProvider>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

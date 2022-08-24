@@ -1,0 +1,36 @@
+@use '../colors/color.scss' as *;
+
+
+
+.light {
+
+  .text {
+    color: $font-light !important;
+  }
+  .line {
+    background-color: $font-light !important;
+  }
+  .background {
+    background-color: $background-light !important;
+  }
+  .background-secondary {
+    background-color: $background-secondary-light !important;
+  }
+}
+
+.dark {
+
+  .text {
+    color: $font-dark !important;
+  }
+  .line {
+    background-color: $font-dark !important;
+  }
+  .background {
+    background-color: $background-dark !important;
+  }
+  .background-secondary {
+    background-color: $background-secondary-dark !important;
+  }
+}
+

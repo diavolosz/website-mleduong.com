@@ -2,56 +2,48 @@ import '../styles/ArticleNavBar.scss'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCloudMoon, faCloudSun } from "@fortawesome/free-solid-svg-icons"
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
+import { ThemeContext } from '../context/ThemeContext'
 
 export default function ArticleNavBar() {
 
-  const [lightMode, setLightMode] = useState(true)
-
-  const handleInvert = () => {
-    document.querySelectorAll('.inverted').forEach((result) => {
-      result.classList.toggle('inverted')
-    })
-  }
+  const { theme, setTheme } = useContext(ThemeContext)
 
   const handleModeChange = () => {
-    window.sessionStorage.setItem("lightMode", !lightMode)
-    setLightMode(JSON.parse(window.sessionStorage.getItem("lightMode")))
-    document.documentElement.classList.toggle('darkMode')
-    handleInvert()
+    setTheme(theme === 'light' ? 'dark' : 'light')
   }
+
   useEffect(() => {
-    setLightMode(JSON.parse(window.sessionStorage.getItem("lightMode")))
-    if (JSON.parse(window.sessionStorage.getItem("lightMode")) === false) {
-      document.documentElement.classList.add('darkMode')
-      handleInvert()
-    } else {
-      document.documentElement.classList.remove('darkMode')
+    if (window.sessionStorage.getItem("mode") === null) {
+      window.sessionStorage.setItem("mode", "light")
     }
+    setTheme(window.sessionStorage.getItem("mode"))
   }, [])
 
-
+  useEffect(() => {
+    window.sessionStorage.setItem("mode", theme)
+  }, [theme])
 
 
   return (
-    <nav className='article-nav-container'>
-      {lightMode === true &&
+    <nav className={`article-nav-container ${theme}`}>
+      {theme === "light" &&
         <FontAwesomeIcon
           icon={faCloudSun}
-          className='mode-switch'
-          onClick={handleModeChange}
+          className='mode-switch text'
+          onClick={() => handleModeChange()}
         />}
-      {lightMode === false &&
+      {theme === "dark" &&
         <FontAwesomeIcon
           icon={faCloudMoon}
-          className='mode-switch'
-          onClick={handleModeChange}
+          className='mode-switch text'
+          onClick={() => handleModeChange()}
         />}
-      <div className='item-wrapper'>
-        <div className='article-nav-item'>ABOUT</div>
-        <div className='article-nav-item'>PROJECTS</div>
-        <div className='article-nav-item'>RESUME</div>
-        <div className='article-nav-item'>CONTACT</div>
+      <div className={`item-wrapper ${theme}`}>
+        <div className='article-nav-item text'>ABOUT</div>
+        <div className='article-nav-item text'>PROJECTS</div>
+        <div className='article-nav-item text'>RESUME</div>
+        <div className='article-nav-item text'>CONTACT</div>
       </div>
     </nav>
   )
