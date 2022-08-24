@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'v-italic';
-  src: url('./fonts/Valkyrie-ExtendedItalic.ttf') format('truetype');
+  font-family: 'butler-light';
+  src: url('./fonts/Butler_Light_Stencil.otf')
 }
 @font-face {
-  font-family: 'v-regular';
-  src: url('./fonts/Valkyrie-Regular.ttf') format('truetype');
+  font-family: 'butler-regular';
+  src: url('./fonts/Butler_Regular_Stencil.otf')
 }
 
 $color1: #EEE7E1;
@@ -24,11 +24,20 @@ $color3: #271A26;
     flex-direction: row;
     
     background-color: $color2;
-    width: 60%;
+    width: 75em;
     height: inherit;
     margin: 8vh auto;
     padding: 2em;
     border-radius: 20px;
     box-shadow: 0px 20px 50px 0px rgba(163, 163, 163, 0.365);
+
+    .main-body-article {
+      height: 90%;
+      width: 90%;
+      margin: 0 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
   }
 }

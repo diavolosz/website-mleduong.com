@@ -1,8 +1,6 @@
 $color1: #EEE7E1;
 $color2: white;
-$color3: #271A26;
-$color4: #342432;
-
+$font-primary: #342432;
 
 .side-nav-container {
   display: flex;
@@ -30,7 +28,7 @@ $color4: #342432;
     }
 
     .small-icon {
-      color: $color4;
+      color: $font-primary;
       font-size: 30px;
       margin-top: 1rem;
       margin-bottom: 1rem;

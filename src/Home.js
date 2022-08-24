@@ -13,7 +13,7 @@ function App() {
       <div className='main-wrapper'>
         <SideNavBar />
 
-        <article>
+        <article className='main-body-article'>
           <ArticleNavBar />
           <MainIntroBlock />
           <SkillsBlock />

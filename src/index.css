@@ -2,6 +2,13 @@
   height: 100%;
 }
 
+.darkMode {
+  filter: invert(1) hue-rotate(180deg);
+}
+.inverted {
+  filter: invert(1) hue-rotate(180deg);
+}
+
 body {
   padding: 0px;
   margin: 0px;
