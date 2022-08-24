@@ -1,11 +1,19 @@
-
+import '../styles/component_styles/SideNavBar.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default function SideNavBar() {
   return (
     <nav className='side-nav-container'>
-      <span>side nav</span>
-      <div className='nav-logo'></div>
-      <div className='nav-connection-list'></div>
+      <div className='nav-logo'>
+        <img src="img/logo.png" alt="logo" className="logo" />
+      </div>
+      <div className='nav-connection-list'>
+        <div className="side-nav-line"></div>
+        <FontAwesomeIcon icon={faGithub} className='small-icon' />
+        <FontAwesomeIcon icon={faLinkedin} className='small-icon' />
+        <div className="side-nav-line"></div>
+      </div>
     </nav>
   )
 }

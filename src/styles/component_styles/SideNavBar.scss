@@ -1,0 +1,42 @@
+$color1: #EEE7E1;
+$color2: white;
+$color3: #271A26;
+$color4: #342432;
+
+
+.side-nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10%;
+
+  .logo {
+    height: 100px;
+    width: 100px;
+  }
+
+  .nav-connection-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+
+    .side-nav-line {
+      width: 1px;
+      height: 270px;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      background-color: #1a1919;
+    }
+
+    .small-icon {
+      color: $color4;
+      font-size: 30px;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+
+  }
+
+}

@@ -15,16 +15,14 @@ function App() {
 
         <article>
           <ArticleNavBar />
-
           <MainIntroBlock />
           <SkillsBlock />
           <AboutMeBlock />
           <PastProjectbBlock />
-
         </article>
 
-        <FooterSection />
       </div>
+        <FooterSection />
     </div>
   );
 }

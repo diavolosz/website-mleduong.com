@@ -1,7 +1,9 @@
+import '../styles/Footer.scss'
+
 export default function FooterSection() {
   return (
-    <div>
+    <footer>
       <span>this is a footer</span>
-    </div>
+    </footer>
   )
 }
