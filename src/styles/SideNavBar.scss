@@ -14,6 +14,10 @@ $font-primary: #342432;
     height: 100px;
     width: 100px;
     filter: none !important;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .nav-connection-list {
@@ -35,6 +39,10 @@ $font-primary: #342432;
       font-size: 30px;
       margin-top: 1rem;
       margin-bottom: 1rem;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
     
 

@@ -6,27 +6,33 @@ import MainIntroBlock from './components/ContentBlocks/01_MainIntro'
 import SkillsBlock from './components/ContentBlocks/02_Skills'
 import AboutMeBlock from './components/ContentBlocks/03_AboutMe'
 import PastProjectbBlock from './components/ContentBlocks/04_PastProject'
+import Resume from './components/ContentBlocks/05_Resume'
+import Contact from './components/ContentBlocks/06_Contact'
 
-
-import { useContext } from 'react'
+import { useState, useContext } from 'react'
 import { ThemeContext } from './context/ThemeContext'
 
 
 function App() {
   const { theme } = useContext(ThemeContext)
 
+  const [display, setDisplay] = useState('intro')
+
   return (
     <div className={`homepage-wrapper ${theme}`}>
       <div className="homepage-container background-secondary">
         <div className='main-wrapper background'>
-          <SideNavBar />
+          <SideNavBar setDisplay={setDisplay}/>
 
           <article className='main-body-article'>
-            <ArticleNavBar />
-            <MainIntroBlock />
-            <SkillsBlock />
-            <AboutMeBlock />
-            <PastProjectbBlock />
+            <ArticleNavBar setDisplay={setDisplay}/>
+
+            { display === 'intro' && <MainIntroBlock />}
+            { display === 'about' && <AboutMeBlock />}
+            { display === 'project' && <PastProjectbBlock />}
+            { display === 'resume' && <Resume />}
+            { display === 'resume' && <SkillsBlock />}
+            { display === 'contact' && <Contact />}
           </article>
 
         </div>

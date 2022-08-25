@@ -1,11 +1,12 @@
 import '../styles/ArticleNavBar.scss'
+import '../styles/animation/animation.scss'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCloudMoon, faCloudSun } from "@fortawesome/free-solid-svg-icons"
 import { useEffect, useState, useContext } from 'react'
 import { ThemeContext } from '../context/ThemeContext'
 
-export default function ArticleNavBar() {
+export default function ArticleNavBar(props) {
 
   const { theme, setTheme } = useContext(ThemeContext)
 
@@ -27,23 +28,26 @@ export default function ArticleNavBar() {
 
   return (
     <nav className={`article-nav-container ${theme}`}>
-      {theme === "light" &&
-        <FontAwesomeIcon
-          icon={faCloudSun}
-          className='mode-switch text'
-          onClick={() => handleModeChange()}
-        />}
-      {theme === "dark" &&
-        <FontAwesomeIcon
-          icon={faCloudMoon}
-          className='mode-switch text'
-          onClick={() => handleModeChange()}
-        />}
+      <div className='mode-button'>
+        {theme === "light" &&
+          <FontAwesomeIcon
+            icon={faCloudSun}
+            className='mode-switch text hvr-buzz '
+            onClick={() => handleModeChange()}
+          />}
+        {theme === "dark" &&
+          <FontAwesomeIcon
+            icon={faCloudMoon}
+            className='mode-switch text hvr-buzz '
+            onClick={() => handleModeChange()}
+          />}
+      </div>
+
       <div className={`item-wrapper ${theme}`}>
-        <div className='article-nav-item text'>ABOUT</div>
-        <div className='article-nav-item text'>PROJECTS</div>
-        <div className='article-nav-item text'>RESUME</div>
-        <div className='article-nav-item text'>CONTACT</div>
+        <div className='article-nav-item text' onClick={() => props.setDisplay('about')}>ABOUT</div>
+        <div className='article-nav-item text' onClick={() => props.setDisplay('project')}>PROJECTS</div>
+        <div className='article-nav-item text' onClick={() => props.setDisplay('resume')}>RESUME</div>
+        <div className='article-nav-item text' onClick={() => props.setDisplay('contact')}>CONTACT</div>
       </div>
     </nav>
   )
