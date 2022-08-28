@@ -32,24 +32,12 @@ export default function MainIntroBlock() {
         </div>
       </div>
 
-      {/* <div className='card-outer background'>
-        <div className='card front'>
-          <img className='card-body' src='img/card-front.png' />
-        </div>
-        <div className='card back'>
-          <img className='card-body' src='img/card-back.JPG' />
-        </div>
-      </div> */}
-
       <ReactCardFlip isFlipped={flip} flipDirection="horizontal">
-        <div className='card front'>
-          <img className='card-body'
-            src='img/card-front.png'
-            onMouseEnter={handleClick}
-            onMouseLeave={handleClick} />
+        <div className='card front border'>
+          <img className='card-body' src='img/card-front.png' onClick={handleClick}/>
         </div>
-        <div className='card back'>
-          <img className='card-body' src='img/card-back.JPG' />
+        <div className='card back border'>
+          <img className='card-body' src='img/card-back.JPG' onClick={handleClick}/>
         </div>
       </ReactCardFlip>
     </div>

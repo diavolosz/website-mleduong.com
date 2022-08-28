@@ -8,6 +8,7 @@ import AboutMeBlock from './components/ContentBlocks/03_AboutMe'
 import PastProjectbBlock from './components/ContentBlocks/04_PastProject'
 import Resume from './components/ContentBlocks/05_Resume'
 import Contact from './components/ContentBlocks/06_Contact'
+import Offer from './components/ContentBlocks/07_Offer';
 
 import { useState, useContext } from 'react'
 import { ThemeContext } from './context/ThemeContext'
@@ -28,6 +29,7 @@ function App() {
             <ArticleNavBar setDisplay={setDisplay}/>
 
             { display === 'intro' && <MainIntroBlock />}
+            { display === 'intro' && <Offer />}
             { display === 'about' && <AboutMeBlock />}
             { display === 'project' && <PastProjectbBlock />}
             { display === 'resume' && <Resume />}

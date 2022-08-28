@@ -16,6 +16,9 @@
   .background-secondary {
     background-color: $background-secondary-light !important;
   }
+  .border {
+    border-color: $font-light !important;;
+  }
 }
 
 .dark {
@@ -31,6 +34,9 @@
   }
   .background-secondary {
     background-color: $background-secondary-dark !important;
+  }
+  .border {
+    border-color: $font-dark !important;;
   }
 }
 

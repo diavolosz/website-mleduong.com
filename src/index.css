@@ -12,6 +12,6 @@
 body {
   padding: 0px;
   margin: 0px;
-  height: 1500px;
+  height: fit-content;
   box-sizing: border-box;
 }

@@ -49,6 +49,18 @@
 }
 
 .front {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 40px;
+  width: 330px;
+  border: 5px solid black;
+  border-radius: 12px;
+  background-color: #C5B9A6;
+
+  &:hover {
+    cursor: pointer;
+  }
   .card-body {
     height: 400px;
     width: 400px;
@@ -56,9 +68,19 @@
 }
 
 .back {
+  display: flex;
+  justify-content: center;
+  width: 330px;
+  border: 5px solid black;
+  border-radius: 12px;
+
+  &:hover {
+    cursor: pointer;
+  }
   .card-body {
-    height: 600px;
-    width: 400px;
+    height: 500px;
+    width: 330px;
     object-fit: cover;
+    border-radius: 6px;
   }
 }
