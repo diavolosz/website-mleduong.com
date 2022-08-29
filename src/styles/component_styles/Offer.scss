@@ -1,0 +1,79 @@
+.article-block-7-container {
+  height: 430px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  animation: blurToClear 1.3s;
+
+  .title {
+    font-size: 40px;
+    font-family: "butler-regular";
+  }
+
+  .intro-container {
+    display: flex;
+    justify-content: space-between;
+
+    .center-image {
+      img {
+        width: 380px;
+        margin-top: 25px;
+        object-fit: contain;
+      }
+    }
+
+    .skills-container {
+      width: 30%;
+      text-align: justify;
+      line-height: 30px;
+      font-family: "Montserrat", sans-serif;
+
+      .skill-title {
+        font-size: 28px;
+        font-weight: 300;
+        margin-bottom: 0;
+      }
+
+      .skill-body {
+        font-size: 17px;
+      }
+    }
+  }
+
+  .button-wrapper {
+    border-radius: 24px;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: relax 1s;
+
+    .button-to-project {
+      font-size: 25px;
+      font-family: "butler-regular";
+
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      animation: stretch 1s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+}
+
+@keyframes stretch {
+  from {width: 150px;}
+  to {width: 17rem;}
+}
+
+@keyframes relax {
+  from {width: 17rem;}
+  to {width: 150px;}
+}

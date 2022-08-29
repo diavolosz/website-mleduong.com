@@ -7,11 +7,17 @@
   .text {
     color: $font-light !important;
   }
+  .text-reverse {
+    color: $font-dark !important;
+  }
   .line {
     background-color: $font-light !important;
   }
   .background {
     background-color: $background-light !important;
+  }
+  .background-reverse {
+    background-color: $background-dark !important;
   }
   .background-secondary {
     background-color: $background-secondary-light !important;
@@ -26,11 +32,17 @@
   .text {
     color: $font-dark !important;
   }
+  .text-reverse {
+    color: $font-light !important;
+  }
   .line {
     background-color: $font-dark !important;
   }
   .background {
     background-color: $background-dark !important;
+  }
+  .background-reverse {
+    background-color: $background-secondary-light !important;
   }
   .background-secondary {
     background-color: $background-secondary-dark !important;

@@ -7,10 +7,15 @@
   src: url('./fonts/Butler_Regular_Stencil.otf')
 }
 
+//font for indie flower
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+//font for Montserrat, sans-serif
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@100;300;600&display=swap');
 
-@import './styles/base/reset.scss';
 
+@import './styles/base/reset.scss';
+@import './styles/animation/Transition.scss';
 
 $color1: #EEE7E1;
 $color2: white;
@@ -47,4 +52,14 @@ $color3: #271A26;
       justify-content: flex-start;
     }
   }
+}
+
+.main-cover {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  width: 100vw;
+  background-color: rgb(29, 25, 29);
+
+  animation: shrinkDownTop 1s;
 }

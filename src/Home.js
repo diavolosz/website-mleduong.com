@@ -13,28 +13,31 @@ import Offer from './components/ContentBlocks/07_Offer';
 import { useState, useContext } from 'react'
 import { ThemeContext } from './context/ThemeContext'
 
-
 function App() {
+  window.onbeforeunload = () => {
+    window.scrollTo(0, 0);
+  }
+
   const { theme } = useContext(ThemeContext)
 
   const [display, setDisplay] = useState('intro')
 
   return (
     <div className={`homepage-wrapper ${theme}`}>
+      { display === 'intro' &&  <div className='main-cover background-reverse'></div> }
       <div className="homepage-container background-secondary">
         <div className='main-wrapper background'>
-          <SideNavBar setDisplay={setDisplay}/>
+          <SideNavBar setDisplay={setDisplay} />
 
           <article className='main-body-article'>
-            <ArticleNavBar setDisplay={setDisplay}/>
-
-            { display === 'intro' && <MainIntroBlock />}
-            { display === 'intro' && <Offer />}
-            { display === 'about' && <AboutMeBlock />}
-            { display === 'project' && <PastProjectbBlock />}
-            { display === 'resume' && <Resume />}
-            { display === 'resume' && <SkillsBlock />}
-            { display === 'contact' && <Contact />}
+            <ArticleNavBar setDisplay={setDisplay} />
+            {display === 'intro' && <MainIntroBlock />}
+            {display === 'intro' && <Offer setDisplay={() => setDisplay}/>}
+            {display === 'about' && <AboutMeBlock />}
+            {display === 'project' && <PastProjectbBlock />}
+            {display === 'resume' && <Resume />}
+            {display === 'resume' && <SkillsBlock />}
+            {display === 'contact' && <Contact />}
           </article>
 
         </div>

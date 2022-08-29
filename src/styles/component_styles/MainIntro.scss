@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   margin-top: 70px;
+
+  animation: blurToClear 1.3s;
 
   .intro-container-1 {
 
@@ -12,18 +13,41 @@
       font-size: 190px;
       font-family: 'butler-regular';
       letter-spacing: 10px;
+
+      animation: fadeInFromBot 1s;
     }
 
     .intro-inner-container {
-      width: 95%;
+      width: 100%;
 
       .intro-nickname {
-        font-size: 35px;
+        display: inline-block;
+        margin: 0;
+        font-size: 40px;
         font-family: 'butler-regular';
       }
 
-      .intro-one-liner {
-        font-size: 35px;
+      .intro-one-liner-1 {
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0;
+        animation: typing 1.6s steps(25, end) forwards;
+        animation-delay: 1s;
+        width: 0;
+
+        font-size: 33px;
+        font-family: 'butler-light';
+      }
+
+      .intro-one-liner-2 {
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0;
+        animation: typing 1.3s steps(25, end) forwards;
+        animation-delay: 2.5s;
+        width: 0;
+
+        font-size: 33px;
         font-family: 'butler-light';
       }
     }
@@ -41,9 +65,22 @@
 
     .detailed-discription {
       text-align: justify;
-      width: 500px;
+      line-height: 25px;
+      width: 520px;
       font-family: 'Montserrat', sans-serif;
-      font-size: 17px;
+      font-size: 18px;
+    }
+  }
+
+  .click-me-sign {
+    position: absolute;
+    top: 420px;
+    font-size: 60px;
+    font-family: 'Indie Flower', cursive;
+    animation: fadeInFromBot 0.8s;
+
+    &:hover {
+      cursor: auto;
     }
   }
 }
@@ -57,10 +94,16 @@
   border: 5px solid black;
   border-radius: 12px;
   background-color: #C5B9A6;
+  opacity: 0;
+
+  animation: fadeInFromRight 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
 
   &:hover {
     cursor: pointer;
   }
+
   .card-body {
     height: 400px;
     width: 400px;
@@ -77,9 +120,10 @@
   &:hover {
     cursor: pointer;
   }
+
   .card-body {
-    height: 500px;
-    width: 330px;
+    height: 510px;
+    width: 340px;
     object-fit: cover;
     border-radius: 6px;
   }
