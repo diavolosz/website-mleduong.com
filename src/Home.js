@@ -10,21 +10,25 @@ import Resume from './components/ContentBlocks/05_Resume'
 import Contact from './components/ContentBlocks/06_Contact'
 import Offer from './components/ContentBlocks/07_Offer';
 
-import { useState, useContext } from 'react'
+import { useState, useContext, useEffect } from 'react'
 import { ThemeContext } from './context/ThemeContext'
 
 function App() {
+
   window.onbeforeunload = () => {
     window.scrollTo(0, 0);
   }
 
   const { theme } = useContext(ThemeContext)
-
   const [display, setDisplay] = useState('intro')
-
+  
+  useEffect(() => {
+      window.scrollTo(0, 0);
+  }, [display])
+  
   return (
     <div className={`homepage-wrapper ${theme}`}>
-      { display === 'intro' &&  <div className='main-cover background-reverse'></div> }
+      {display === 'intro' && <div className='main-cover background-reverse'></div>}
       <div className="homepage-container background-secondary">
         <div className='main-wrapper background'>
           <SideNavBar setDisplay={setDisplay} />
@@ -32,7 +36,7 @@ function App() {
           <article className='main-body-article'>
             <ArticleNavBar setDisplay={setDisplay} />
             {display === 'intro' && <MainIntroBlock />}
-            {display === 'intro' && <Offer setDisplay={() => setDisplay}/>}
+            {display === 'intro' && <Offer setDisplay={setDisplay} />}
             {display === 'about' && <AboutMeBlock />}
             {display === 'project' && <PastProjectbBlock />}
             {display === 'resume' && <Resume />}
