@@ -30,8 +30,8 @@ export default function Offer(props) {
           </p>
         </div>
       </div>
-      <div className='button-wrapper background-reverse text-reverse'>
-        <span className='button-to-project' onClick={() => props.setDisplay('project')}> My Work </span>
+      <div className='button-wrapper background-reverse text-reverse' onClick={() => props.setDisplay('project')}>
+        <span className='button-to-project' > My Work </span>
       </div>
     </div>
   )

@@ -22,10 +22,24 @@ function App() {
   const { theme } = useContext(ThemeContext)
   const [display, setDisplay] = useState('intro')
   
+  //scroll up upon refresh
   useEffect(() => {
       window.scrollTo(0, 0);
   }, [display])
   
+  //keep display component when refreshed
+  useEffect(() => {
+    if (window.sessionStorage.getItem("display") === null) {
+      window.sessionStorage.setItem("display", "intro")
+    }
+    setDisplay(window.sessionStorage.getItem("display"))
+  }, [])
+
+  useEffect(() => {
+    window.sessionStorage.setItem("display", display)
+  }, [display])
+
+
   return (
     <div className={`homepage-wrapper ${theme}`}>
       {display === 'intro' && <div className='main-cover background-reverse'></div>}

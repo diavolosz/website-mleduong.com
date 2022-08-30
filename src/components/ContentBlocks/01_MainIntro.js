@@ -12,8 +12,8 @@ export default function MainIntroBlock() {
 
   const handleClick = (e) => {
     e.preventDefault();
-    setDisplayClick(!displayClick)
-    setFlip(!flip)
+    setDisplayClick(!displayClick);
+    setFlip(!flip);
   }
 
   return (
@@ -40,7 +40,7 @@ export default function MainIntroBlock() {
       <ReactCardFlip isFlipped={flip} flipDirection="horizontal">
         <div className='card front border'>
           <img className='card-body' src='img/card-front.png' onClick={handleClick} />
-          {displayClick && <span className='click-me-sign text'>Click Me</span>}
+          {displayClick && <span className="click-me-sign text" text>Click Me</span>}
         </div>
         <div className='card back border'>
           <img className='card-body' src='img/card-back.JPG' onClick={handleClick} />
