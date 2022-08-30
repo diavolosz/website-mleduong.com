@@ -43,6 +43,7 @@ function App() {
   return (
     <div className={`homepage-wrapper ${theme}`}>
       {display === 'intro' && <div className='main-cover background-reverse'></div>}
+      {display === 'resume' && <div className='resume-cover background-reverse'></div>}
       <div className="homepage-container background-secondary">
         <div className='main-wrapper background'>
           <SideNavBar setDisplay={setDisplay} />
@@ -53,8 +54,8 @@ function App() {
             {display === 'intro' && <Offer setDisplay={setDisplay} />}
             {display === 'about' && <AboutMeBlock />}
             {display === 'project' && <PastProjectbBlock />}
-            {display === 'resume' && <Resume />}
             {display === 'resume' && <SkillsBlock />}
+            {display === 'resume' && <Resume />}
             {display === 'contact' && <Contact />}
           </article>
 

@@ -42,7 +42,7 @@ export default function MainIntroBlock() {
           <img className='card-body' src='img/card-front.png' onClick={handleClick} />
           {displayClick && <span className="click-me-sign text" text>Click Me</span>}
         </div>
-        <div className='card back border'>
+        <div className='card back border background-reverse'>
           <img className='card-body' src='img/card-back.JPG' onClick={handleClick} />
         </div>
       </ReactCardFlip>

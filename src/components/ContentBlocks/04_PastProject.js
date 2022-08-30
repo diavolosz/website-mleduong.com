@@ -27,7 +27,7 @@ export default function PastProjectbBlock() {
     <div className={`article-block-4-container ${theme}`}>
       <p className='section-title text'>MY WORKS</p>
 
-      <div className="inner-container s1 border">
+      <div className="inner-container s1 border background-reverse">
         <div className={`image-card-left ${P1}`}>
           <img className="gif-showcase" src='img/gifs/testingGIF.gif' alt='testing' onClick={handleHoverLeftP1} />
         </div>
@@ -38,14 +38,14 @@ export default function PastProjectbBlock() {
               My first personal website built with React.js. Incorporated an extensive varity of stylings, designs, and effects to enhance my front-end skills.
             </div>
             <div className='button-wrapper background text'>
-              <a href='https://github.com/diavolosz/website-mleduong.com' className='button-to-project'>GitHub</a>
+              <a href='https://github.com/diavolosz/website-mleduong.com' className='button-to-project' target="_blank">GitHub</a>
             </div>
           </div>
         </div>
       </div>
 
 
-      <div className="inner-container s2 border">
+      <div className="inner-container s2 border background-reverse">
         <div className="description-card-left background-reverse">
           <div className='project-description-container'>
             <div className='project-title text-reverse'> BayStreetbets </div>
@@ -53,7 +53,7 @@ export default function PastProjectbBlock() {
               A Stock Trading Platform that allow user to keep track of their stocks and portfolios. Has unique feature for trade competitions with peers to crown the winner.
             </div>
             <div className='button-wrapper background text'>
-              <a href='https://github.com/diavolosz/BayStreetBets' className='button-to-project'>GitHub</a>
+              <a href='https://github.com/diavolosz/BayStreetBets' className='button-to-project' target="_blank">GitHub</a>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default function PastProjectbBlock() {
       </div>
 
 
-      <div className="inner-container s3 border">
+      <div className="inner-container s3 border background-reverse">
         <div className={`image-card-left ${P3}`}>
           <img className="gif-showcase" src='img/gifs/PNT.gif' alt='testing' onClick={handleHoverLeftP3} />
         </div>
@@ -74,13 +74,13 @@ export default function PastProjectbBlock() {
               An Address Notebook. Pinnet offers users the ability to pin and save their favorite place to eat or hangout by creating their own sharable address list.
             </div>
             <div className='button-wrapper background text'>
-              <a href='https://github.com/diavolosz/Lighthouse-MT-wikiMaps' className='button-to-project'>GitHub</a>
+              <a href='https://github.com/diavolosz/Lighthouse-MT-wikiMaps' className='button-to-project' target="_blank">GitHub</a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="inner-container s4 border">
+      <div className="inner-container s4 border background-reverse">
         <div className="description-card-left background-reverse">
           <div className='project-description-container'>
             <div className='project-title text-reverse'> Jungle </div>
@@ -88,7 +88,7 @@ export default function PastProjectbBlock() {
               A mini E-commerce. Built with Ruby on Rails, the application allows visitors to view, purchase plants while allowing seller to stock up inventory and sell.
             </div>
             <div className='button-wrapper background text'>
-              <a href='https://github.com/diavolosz/RubyRails-jungle-project' className='button-to-project'>GitHub</a>
+              <a href='https://github.com/diavolosz/RubyRails-jungle-project' className='button-to-project' target="_blank">GitHub</a>
             </div>
           </div>
         </div>

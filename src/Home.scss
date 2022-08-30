@@ -63,3 +63,13 @@ $color3: #271A26;
 
   animation: shrinkDownTop 1s;
 }
+
+.resume-cover {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  width: 100vw;
+  background-color: rgb(29, 25, 29);
+
+  animation: shrinkTopDown 1s;
+}
