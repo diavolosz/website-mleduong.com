@@ -29,7 +29,7 @@ export default function PastProjectbBlock() {
 
       <div className="inner-container s1 border background-reverse">
         <div className={`image-card-left ${P1}`}>
-          <img className="gif-showcase" src='img/gifs/testingGIF.gif' alt='testing' onClick={handleHoverLeftP1} />
+          <img className="gif-showcase" src='img/gifs/MLD.gif' alt='testing' onClick={handleHoverLeftP1} />
         </div>
         <div className="description-card-right background-reverse">
           <div className='project-description-container'>

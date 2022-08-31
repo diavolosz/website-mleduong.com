@@ -28,6 +28,9 @@
   .border {
     border-color: $font-light !important;;
   }
+  .border-reverse {
+    border-color: $font-dark !important;;
+  }
 }
 
 .dark {
@@ -55,6 +58,9 @@
   }
   .border {
     border-color: $font-dark !important;;
+  }
+  .border-reverse {
+    border-color: $font-light !important;;
   }
 }
 

@@ -3,7 +3,7 @@ import '../../styles/component_styles/Skills.scss'
 export default function SkillsBlock() {
   return (
     <div className="article-block-2-container">
-      <p className='section-title'>SKILLS & HISTORY</p>
+      <p className='section-title text'>SKILLS & HISTORY</p>
       <div className='skill-block-container'>
 
         <div className='skill-set-container frontend background-tertiary'>

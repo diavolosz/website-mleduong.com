@@ -55,7 +55,7 @@ function App() {
             {display === 'about' && <AboutMeBlock />}
             {display === 'project' && <PastProjectbBlock />}
             {display === 'resume' && <SkillsBlock />}
-            {display === 'resume' && <Resume />}
+            {display === 'resume' && <Resume setDisplay={setDisplay}/>}
             {display === 'contact' && <Contact />}
           </article>
 
