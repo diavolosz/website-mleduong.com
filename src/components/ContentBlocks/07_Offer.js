@@ -17,7 +17,7 @@ export default function Offer(props) {
         <div data-aos="zoom-out-left" className='skills-container'>
           <p className='skill-title'>FRONTEND</p>
           <p className='skill-body'>
-            Use modern popular technologies such as SCSS, TailwindCSS, React.js, and Vue.js to build user-friendly client-side applications while maintaining good practices using semantic coding styles for team based projects.
+            Use modern popular technologies such as SCSS, TailwindCSS, React.js, and Vue.js to build user-friendly client-side applications while maintaining good practices using semantic coding styles for team-based projects.
           </p>
         </div>
         <div className='center-image'>

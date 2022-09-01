@@ -31,7 +31,7 @@ export default function MainIntroBlock() {
         <div className="intro-container-2">
           <span className="intro-fullname">Hien Thong Le Duong</span>
           <p className="detailed-discription">
-            Has a background in quality assurance and quality control. I love being innovative and have the ability in designing user interfaces, testing codes and constructing databases and servers to develop intriguing and user-friendly web application.
+            Has a background in quality assurance and quality control. I love being innovative and have the ability in designing user interfaces, testing codes and constructing databases and servers to develop intriguing and user-friendly web applications.
           </p>
         </div>
       </div>
