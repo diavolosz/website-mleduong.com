@@ -3,8 +3,193 @@
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
-  margin-top: 20px;
+  margin-top: 4em;
+
+  animation: blurToClear 1.3s;
+
+  .personal-description {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+
+    .text-body-container {
+      width: 55%;
+      display: flex;
+      flex-direction: column;
 
 
-  
+      .text-body-title {
+        margin: 0.40em 0 0 0;
+        font-size: 90px;
+        text-align: end;
+        font-family: "butler-regular";
+
+        animation: fadeInFromBot 1s;
+
+      }
+
+      .text-body {
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+        word-spacing: 5px;
+        text-align: justify;
+
+        .body-paragraph-intro {
+          font-size: 28px;
+          text-align: start;
+          word-spacing: 0px;
+          font-family: "butler-light";
+        }
+
+        .body-paragraph {
+          line-height: 1.5em;
+        }
+
+        .body-quote {
+          margin: 0.15em 0;
+          font-size: 28px;
+          word-spacing: 0px;
+          font-family: "butler-regular";
+        }
+
+        .body-quote-author {
+          margin: 0px;
+          font-size: 20px;
+          text-align: end;
+          word-spacing: 0px;
+          font-family: "butler-light";
+        }
+      }
+    }
+
+    .right-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 1200px;
+      width: 35%;
+
+
+      .picture-sets {
+        height: 60%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .personal-hobbies {
+        margin-top: 10em;
+        height: 40%;
+
+        .section-title {
+          margin: 0.5em 0 1em 0;
+          font-size: 39px;
+          word-spacing: 0px;
+          font-family: "Montserrat", sans-serif;;
+        }
+
+        .tags-container {
+
+          .tag {
+            margin: 1em 0;
+          }
+
+          .tag1 {
+            width: 320px;
+          }
+
+          .tag2 {
+            width: 200px;
+            margin-left: 10%;
+          }
+
+          .tag3 {
+            width: 320px;
+            margin-left: 14%;
+          }
+
+          .tag4 {
+            width: 240px;
+            margin-left: 35%;
+          }
+
+          .tag5 {
+            width: 250px;
+            margin-left: 5%;
+          }
+
+          .tag6 {
+            width: 300px;
+            margin-left: 25%;
+          }
+
+          .tag7 {
+            width: 150px;
+          }
+
+          .tag8 {
+            width: 210px;
+            margin-left: 15%;
+          }
+
+          .tag9 {
+            width: 260px;
+            margin-left: 36%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.awssld {
+  margin: 2.8em 0;
+  height: 100%;
+  opacity: 0;
+  --control-bullet-active-color: rgb(150, 102, 40) !important;
+  --control-bullet-color: rgb(89, 67, 97) !important;
+  --loader-bar-color: #ECE5E0 !important;
+  --organic-arrow-color: #ECE5E0 !important;
+  --control-button-opacity: 0.75 !important;
+  --control-button-hover-opacity: 1 !important;
+
+  animation: enlarge 0.5s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.8s;
+}
+
+@keyframes enlarge {
+  from {
+    left: 48%;
+    top: 10%;
+    width: 0%;
+    height: 0%;
+  }
+
+  to {
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
 }

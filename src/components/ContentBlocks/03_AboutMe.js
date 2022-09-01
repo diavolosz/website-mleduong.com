@@ -1,15 +1,17 @@
 import '../../styles/component_styles/AboutMe.scss'
+import PictureSlider from '../PictureSlider'
+import InfiniteRollTag from '../InfiniteRollTag'
 
 export default function AboutMeBlock() {
   return (
     <div className="article-block-3-container">
 
       <div className='personal-description'>
-        <div className='text-body-container'>
+        <div className='text-body-container text'>
           <p className='text-body-title'>ME, MYSELF & I</p>
           <p className='text-body'>
-            <span className='body-paragraph'>
-              I am a full-stack developer with experience in building small projects that has eye-catching animations and effects with an extensive amount of utilities that interact with backend databases.
+            <span className='body-paragraph-intro'>
+              I am a Full-Stack Developer with experience in building small projects that has eye-catching animations and effects with an extensive amount of utilities that interact with backend databases.
             </span>
             <br />
             <br />
@@ -33,26 +35,63 @@ export default function AboutMeBlock() {
             </span>
             <br />
             <br />
-            <span className='body-quote'>
-              “Programming is the art of algorithm design and the craft of debugging errant code.” - Ellen Ullman
-            </span>
+            <p className='body-quote'>
+              “Programming is the art of algorithm design and the craft of debugging errant code.”
+            </p>
+            <p className='body-quote-author'>- Ellen Ullman</p>
             <br />
             <br />
             <span className='body-paragraph'>
-              Not only do I want to express my artistic side and build designs, but being able to apply my programming knowledge across different projects to identify and solve problems in creative ways has further fuelled my passion tremendously.
+              Not only do I want to express my artistic side and build designs, but being able to apply my programming knowledge across different projects to identify and solve problems in creative ways has further fuelled my passion to keep doing what I love.
             </span>
             <br />
             <br />
           </p>
         </div>
-        <div className='picture-sets'>
-          
+
+        <div className='right-container'>
+
+          <div className='picture-sets'>
+            <PictureSlider />
+          </div>
+          <div className='personal-hobbies'>
+            <div className='tags-container'>
+              <p className='section-title text'>THINGS I'M INTERESTED IN</p>
+              <div className='tag1 tag'>
+                <InfiniteRollTag content='WEBFLOW DEVELOPMENT' />
+              </div>
+              <div className='tag2 tag'>
+                <InfiniteRollTag content='UI/UX DESIGN' />
+              </div>
+              <div className='tag3 tag'>
+                <InfiniteRollTag content='FRONTENT DEVELOPMENT' />
+              </div>
+              <div className='tag4 tag'>
+                <InfiniteRollTag content='ABSTRACT DESIGNS' />
+              </div>
+              <div className='tag5 tag'>
+                <InfiniteRollTag content='STARTUPS BUSINESS' />
+              </div>
+              <div className='tag6 tag'>
+                <InfiniteRollTag content='USER-FRIENDLY DESIGNS' />
+              </div>
+              <div className='tag7 tag'>
+                <InfiniteRollTag content='DRAWING' />
+              </div>
+              <div className='tag8 tag'>
+                <InfiniteRollTag content='ACOUSTIC MUSICS' />
+              </div>
+              <div className='tag9 tag'>
+                <InfiniteRollTag content='UNHEALTHY BURGERS' />
+              </div>
+
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className='personal-hobbies'>
 
       </div>
+
+
 
     </div>
   )

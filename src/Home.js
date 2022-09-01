@@ -44,6 +44,7 @@ function App() {
     <div className={`homepage-wrapper ${theme}`}>
       {display === 'intro' && <div className='main-cover background-reverse'></div>}
       {display === 'resume' && <div className='resume-cover background-reverse'></div>}
+      {display === 'about' && <div className='about-cover background-reverse'></div>}
       <div className="homepage-container background-secondary">
         <div className='main-wrapper background'>
           <SideNavBar setDisplay={setDisplay} />

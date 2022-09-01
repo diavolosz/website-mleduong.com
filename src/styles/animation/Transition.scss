@@ -82,6 +82,17 @@
   }
 }
 
+@keyframes shrinkLeftRight {
+  from {
+    width: 100vw;
+    left: 0;
+  }
+  to {
+    width: 0vw;
+    left: 100%;
+  }
+}
+
 
 @keyframes typing {
   from {width: 0%; 

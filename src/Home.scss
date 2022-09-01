@@ -73,3 +73,15 @@ $color3: #271A26;
 
   animation: shrinkTopDown 1s;
 }
+
+.about-cover {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(29, 25, 29);
+
+  animation: shrinkLeftRight 1s;
+  animation-fill-mode: forwards;
+}
