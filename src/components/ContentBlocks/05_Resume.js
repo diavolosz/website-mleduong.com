@@ -7,6 +7,12 @@ import StyledButton from '../StyledButton'
 export default function Resume(props) {
 
   const [timeline, setTimeline] = useState("s6")
+  const [displayClick, setDisplayClick] = useState(true)
+
+  const handleDotClick = (e) => {
+    setTimeline(e)
+    setDisplayClick(false)
+  }
 
   return (
     <div className="article-block-5-container">
@@ -14,12 +20,13 @@ export default function Resume(props) {
       <div className='timeline-resume-wrapper'>
         <div className='timeline-container' data-aos="fade-right">
           <div className='dot-container'>
+          {displayClick && <span className="click-me-sign text" text>Click the Dot !</span>}
 
             <div className='line background-reverse'></div>
             <div className='arrow border'></div>
 
             <div className='dot-inner-wrapper'>
-              <div className='dot background-reverse' onClick={() => setTimeline("s1")}>
+              <div className='dot background-reverse' onClick={() => handleDotClick("s1")}>
                 {timeline === 's1' &&
                   <div className='timeline-content-wrapper-up'>
                     <div className='timeline-content-up border background-secondary text'>
@@ -36,7 +43,7 @@ export default function Resume(props) {
 
 
             <div className='dot-inner-wrapper'>
-              <div className='dot background-reverse' onClick={() => setTimeline("s2")}>
+              <div className='dot background-reverse' onClick={() => handleDotClick("s2")}>
                 {timeline === 's2' &&
                   <div className='timeline-content-wrapper-down'>
                     <div className='dot-connect-line background-reverse'></div>
@@ -52,7 +59,7 @@ export default function Resume(props) {
             </div>
 
             <div className='dot-inner-wrapper'>
-              <div className='dot background-reverse' onClick={() => setTimeline("s3")}>
+              <div className='dot background-reverse' onClick={() => handleDotClick("s3")}>
                 {timeline === 's3' &&
                   <div className='timeline-content-wrapper-up'>
                     <div className='timeline-content-up border background-secondary text'>
@@ -69,7 +76,7 @@ export default function Resume(props) {
 
 
             <div className='dot-inner-wrapper'>
-              <div className='dot background-reverse' onClick={() => setTimeline("s4")}>
+              <div className='dot background-reverse' onClick={() => handleDotClick("s4")}>
                 {timeline === 's4' &&
                   <div className='timeline-content-wrapper-down'>
                     <div className='dot-connect-line background-reverse'></div>
@@ -87,7 +94,7 @@ export default function Resume(props) {
             </div>
 
             <div className='dot-inner-wrapper'>
-              <div className='dot background-reverse' onClick={() => setTimeline("s5")}>
+              <div className='dot background-reverse' onClick={() => handleDotClick("s5")}>
                 {timeline === 's5' &&
                   <div className='timeline-content-wrapper-up'>
                     <div className='timeline-content-up border background-secondary text'>
@@ -104,7 +111,7 @@ export default function Resume(props) {
 
 
             <div className='dot-inner-wrapper'>
-              <div className='dot background-reverse' onClick={() => setTimeline("s6")}>
+              <div className='dot background-reverse' onClick={() => handleDotClick("s6")}>
                 {timeline === 's6' &&
                   <div className='timeline-content-wrapper-down'>
                     <div className='dot-connect-line background-reverse'></div>

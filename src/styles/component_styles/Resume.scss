@@ -32,6 +32,16 @@
       align-items: center;
       justify-content: space-evenly;
 
+      .click-me-sign {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        rotate: -5deg;
+        font-size: 35px;
+        font-family: 'Indie Flower', cursive;        
+      }
+
+
       .line {
         position: absolute;
         height: 3px;

@@ -61,7 +61,7 @@ function App() {
           </article>
 
         </div>
-        <FooterSection />
+        <FooterSection setDisplay={setDisplay}/>
       </div>
     </div>
   );
