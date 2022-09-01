@@ -64,7 +64,7 @@ export default function AboutMeBlock() {
                 <InfiniteRollTag content='UI/UX DESIGN' />
               </div>
               <div className='tag3 tag'>
-                <InfiniteRollTag content='FRONTENT DEVELOPMENT' />
+                <InfiniteRollTag content='FRONTEND DEVELOPMENT' />
               </div>
               <div className='tag4 tag'>
                 <InfiniteRollTag content='ABSTRACT DESIGNS' />
