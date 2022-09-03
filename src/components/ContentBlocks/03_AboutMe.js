@@ -9,7 +9,7 @@ export default function AboutMeBlock() {
       <div className='personal-description'>
         <div className='text-body-container text'>
           <p className='text-body-title'>ME, MYSELF & I</p>
-          <p className='text-body'>
+          <div className='text-body'>
             <span className='body-paragraph-intro'>
               I am a Full-Stack Developer with experience in building small projects that has eye-catching animations and effects with an extensive amount of utilities that interact with backend databases.
             </span>
@@ -46,7 +46,7 @@ export default function AboutMeBlock() {
             </span>
             <br />
             <br />
-          </p>
+          </div>
         </div>
 
         <div className='right-container'>

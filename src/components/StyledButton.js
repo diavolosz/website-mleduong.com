@@ -2,15 +2,15 @@ import '../styles/StyledButton.scss'
 
 export default function StyledButton(props) {
   return (
-    <div class="buttons background-secondary">
-      <a class="blob-btn " href={props.link} target='_blank' onClick={() => props.setDisplay('about')}>
+    <div className="buttons background-secondary">
+      <a className="blob-btn " href={props.link} target='_blank' onClick={() => props.setDisplay('about')}>
         {props.content}
-        <span class="blob-btn__inner background-secondary">
-          <span class="blob-btn__blobs">
-            <span class="blob-btn__blob"></span>
-            <span class="blob-btn__blob"></span>
-            <span class="blob-btn__blob"></span>
-            <span class="blob-btn__blob"></span>
+        <span className="blob-btn__inner background-secondary">
+          <span className="blob-btn__blobs">
+            <span className="blob-btn__blob"></span>
+            <span className="blob-btn__blob"></span>
+            <span className="blob-btn__blob"></span>
+            <span className="blob-btn__blob"></span>
           </span>
         </span>
       </a>

@@ -24,9 +24,9 @@ export default function Contact() {
         <span className='quote-author text'>- Albrecht Durer</span>
       </p>
       <p className='contact-details text'>
-        <div>
+        <p>
           <strong>Email: </strong><a href="mailto:htleduong529@gmail.com" className='text'>htleduong529@gmail.com</a>
-        </div>
+        </p>
         <div>
           <strong>Social: </strong>
           <a href="https://www.linkedin.com/in/hienthong-leduong/" className='text'>Linkedin</a> 

@@ -103,7 +103,7 @@
   border-radius: 12px;
   background-color: #C5B9A6;
   opacity: 0;
-
+  backface-visibility:hidden;
   animation: fadeInFromRight 1s;
   animation-fill-mode: forwards;
   animation-delay: 0.5s;
