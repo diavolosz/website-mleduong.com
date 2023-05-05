@@ -193,3 +193,160 @@
     opacity: 1;
   }
 }
+
+
+
+
+@media only screen and (max-width: 414px) {
+
+  .article-block-3-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    margin-top: 4em;
+  
+    animation: blurToClear 1.3s;
+  
+    .personal-description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+      .text-body-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+  
+  
+        .text-body-title {
+          margin: 0.40em 0 0 0;
+          font-size: 35px;
+          text-align: end;
+          font-family: "butler-regular";
+  
+          animation: fadeInFromBot 1s;
+        }
+  
+        .text-body {
+          font-size: 14px;
+          font-family: "Montserrat", sans-serif;
+          word-spacing: 0px;
+          text-align: justify;
+  
+          .body-paragraph-intro {
+            font-size: 14px;
+            text-align: start;
+            word-spacing: 0px;
+            font-family: "butler-light";
+          }
+  
+          .body-paragraph {
+            font-size: 10px;
+          }
+  
+          .body-quote {
+            margin: 0.15em 0;
+            font-size: 16px;
+            word-spacing: 0px;
+            font-family: "butler-regular";
+          }
+  
+          .body-quote-author {
+            margin: 0px;
+            font-size: 16px;
+            text-align: end;
+            word-spacing: 0px;
+            font-family: "butler-light";
+          }
+        }
+      }
+  
+      .right-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 900px;
+        width: 100%;
+  
+  
+        .picture-sets {
+          height: 30%;
+          width: 200px;
+  
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+  
+        .personal-hobbies {
+          margin-top: 10em;
+          height: 40%;
+          width: 100%;
+  
+          .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            word-spacing: 0px;
+            font-family: "Montserrat", sans-serif;;
+          }
+  
+          .tags-container {
+            
+            .tag {
+              margin: 1em 0;
+            }
+  
+            .tag1 {
+              width: 200px;
+            }
+  
+            .tag2 {
+              width: 100px;
+              margin-left: 10%;
+            }
+  
+            .tag3 {
+              width: 200px;
+              margin-left: 14%;
+            }
+  
+            .tag4 {
+              width: 160px;
+              margin-left: 35%;
+            }
+  
+            .tag5 {
+              width: 170px;
+              margin-left: 5%;
+            }
+  
+            .tag6 {
+              width: 200px;
+              margin-left: 25%;
+            }
+  
+            .tag7 {
+              width: 100px;
+            }
+  
+            .tag8 {
+              width: 180px;
+              margin-left: 15%;
+            }
+  
+            .tag9 {
+              width: 180px;
+              margin-left: 36%;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+}
