@@ -50,3 +50,56 @@ $font-primary: #342432;
   }
 
 }
+
+
+@media only screen and (max-width: 414px) {
+
+  .side-nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10%;
+  
+    .logo {
+      height: 40px;
+      width: 40px;
+      filter: none !important;
+  
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  
+    .nav-connection-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0.5rem;
+      height: 100%;
+  
+      .side-nav-line {
+        width: 1px;
+        height: 100%;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        background-color: #1a1919;
+      }
+  
+      .small-icon {
+        color: $font-primary;
+        font-size: 20px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+  
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      
+  
+    }
+  
+  }
+  
+
+}

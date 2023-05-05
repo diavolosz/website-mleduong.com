@@ -77,3 +77,82 @@
   from {width: 17rem;}
   to {width: 150px;}
 }
+
+
+
+
+@media only screen and (max-width: 414px) {
+
+  .article-block-7-container {
+    height: 430px;
+    margin: 100px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    animation: blurToClear 1.3s;
+  
+    .title {
+      font-size: 18px;
+      font-family: "butler-regular";
+    }
+  
+    .intro-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+      .center-image {
+        img {
+          width: 200px;
+          margin-top: 5px;
+          object-fit: contain;
+        }
+      }
+  
+      .skills-container {
+        width: 100%;
+        text-align: justify;
+        line-height: 15px;
+        font-family: "Montserrat", sans-serif;
+  
+        .skill-title {
+          font-size: 14px;
+          font-weight: 300;
+          margin-bottom: 0;
+        }
+  
+        .skill-body {
+          font-size: 10px;
+        }
+      }
+    }
+  
+    .button-wrapper {
+      border-radius: 24px;
+      height: 50px;
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 8px;
+
+      animation: relax 1s;
+  
+      .button-to-project {
+        font-size: 16px;
+        font-family: "butler-regular";
+  
+      }
+  
+      &:hover {
+        cursor: pointer;
+  
+        animation: stretch 1s;
+        animation-fill-mode: forwards;
+      }
+    }
+  
+  }
+  
+}
