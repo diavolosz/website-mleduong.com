@@ -11,15 +11,23 @@ export default function PastProjectbBlock() {
   const [P4, setP4] = useState(null)
 
   const handleHoverLeftP1 = () => {
+    let innerWidth = window.innerWidth
+    if (innerWidth <= 600) return
     P1 ? setP1(null) : setP1("hover-left")
   }
   const handleHoverRightP2 = (e) => {
+    let innerWidth = window.innerWidth
+    if (innerWidth <= 600) return
     P2 ? setP2(null) : setP2("hover-right")
   }
   const handleHoverLeftP3 = (e) => {
+    let innerWidth = window.innerWidth
+    if (innerWidth <= 600) return
     P3 ? setP3(null) : setP3("hover-left")
   }
   const handleHoverRightP4 = (e) => {
+    let innerWidth = window.innerWidth
+    if (innerWidth <= 600) return
     P4 ? setP4(null) : setP4("hover-right")
   }
 
@@ -67,7 +75,7 @@ export default function PastProjectbBlock() {
           <div className='project-description-container'>
             <div className='project-title text-reverse'> Vnote </div>
             <div className='project-description text-reverse'>
-              a sleek, user-friendly note-taking platform designed for effortless organization, perfect for individuals and teams looking to keep their ideas and tasks in one place.
+              a sleek, user-friendly note-taking platform designed for effortless organization, perfect for individuals and teams looking to keep their ideas and tasks.
             </div>
             <div className='button-wrapper background text'>
               <a href='https://notes.voithos.app/' className='button-to-project' target="_blank">Link</a>

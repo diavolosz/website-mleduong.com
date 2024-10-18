@@ -2,6 +2,7 @@
   font-family: 'butler-light';
   src: url('./fonts/Butler_Light_Stencil.otf')
 }
+
 @font-face {
   font-family: 'butler-regular';
   src: url('./fonts/Butler_Regular_Stencil.otf')
@@ -34,7 +35,7 @@ $color3: #271A26;
   .main-wrapper {
     display: flex;
     flex-direction: row;
-    
+
     background-color: $color2;
     width: 65%;
     height: 100%;
@@ -94,23 +95,23 @@ $color3: #271A26;
     height: 100%;
     display: flex;
     flex-direction: column;
-  
+
     .main-wrapper {
       display: flex;
       flex-direction: row;
-      
+
       background-color: $color2;
-      width: 75%;
+      width: calc(90vw - 2rem);
       height: 100%;
-      margin: 4vh auto 2vh auto;
-      padding: 2em;
+      margin: 4vh 5vw 2vh 5vw;
+      padding: 1em;
       border-radius: 20px;
       box-shadow: 0px 20px 50px 0px rgba(163, 163, 163, 0.365);
-  
+
       .main-body-article {
         height: 90%;
         width: 90%;
-        margin: 0 2rem;
+        margin: 0 1rem;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;

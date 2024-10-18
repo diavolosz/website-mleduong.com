@@ -86,7 +86,7 @@
     font-size: 60px;
     font-family: 'Indie Flower', cursive;
     animation: fadeInFromBot 0.8s;
-    
+
     &:hover {
       cursor: auto;
     }
@@ -103,7 +103,7 @@
   border-radius: 12px;
   background-color: #C5B9A6;
   opacity: 0;
-  backface-visibility:hidden;
+  backface-visibility: hidden;
   animation: fadeInFromRight 1s;
   animation-fill-mode: forwards;
   animation-delay: 0.5s;
@@ -130,8 +130,8 @@
   }
 
   .card-body {
-    height: 510px;
-    width: 340px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 6px;
   }
@@ -147,24 +147,24 @@
 
 
     .intro-container-1 {
-  
+
       .large-title {
         font-size: 80px;
         letter-spacing: 5px;
       }
-  
+
       .intro-inner-container {
         width: 100%;
-  
+
         .intro-nickname {
           font-size: 30px;
         }
-  
+
         .intro-one-liner-1 {
           font-size: 14px;
           font-family: 'butler-light';
         }
-  
+
         .intro-one-liner-2 {
           overflow: hidden;
           white-space: nowrap;
@@ -172,26 +172,26 @@
           animation: typing 1.3s steps(25, end) forwards;
           animation-delay: 2.0s;
           width: 0;
-  
+
           font-size: 14px;
           font-family: 'butler-light';
         }
       }
     }
-  
+
     .intro-container-2 {
       margin-top: 15px;
-  
+
       .intro-fullname {
         font-size: 16px;
         font-family: 'Montserrat', sans-serif;
         opacity: 0;
-  
+
         animation: transitionIn 1.5s;
         animation-delay: 3s;
         animation-fill-mode: forwards;
       }
-  
+
       .detailed-discription {
         text-align: justify;
         line-height: 20px;
@@ -199,26 +199,26 @@
         font-family: 'Montserrat', sans-serif;
         font-size: 10px;
         opacity: 0;
-  
+
         animation: transitionIn 1s;
         animation-delay: 3s;
         animation-fill-mode: forwards;
       }
     }
-  
+
     .click-me-sign {
       position: absolute;
       top: 190px;
       font-size: 16px;
       font-family: 'Indie Flower', cursive;
       animation: fadeInFromBot 0.8s;
-      
+
       &:hover {
         cursor: auto;
       }
     }
   }
-  
+
   .front {
     position: relative;
     left: 15%;
@@ -230,7 +230,7 @@
       height: 180px;
     }
   }
-  
+
   .back {
     position: relative;
     top: 40px;
@@ -238,7 +238,7 @@
     height: 180px;
     width: 150px;
     border: 2px solid black;
-    
+
     .card-body {
       height: 180px;
       border-radius: 12px;

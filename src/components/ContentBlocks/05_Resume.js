@@ -117,7 +117,7 @@ export default function Resume(props) {
                     <div className='dot-connect-line background-reverse'></div>
                     <div className='timeline-content-down border background-secondary text'>
                       <img className='timeline-img' src='img/LHL.png' alt='timeline-img' />
-                      <span className='timeline-date'>August - Present, 2022</span>
+                      <span className='timeline-date'>August - Present, 2024</span>
                       <span className='timeline-location'>Lighthouse Labs</span>
                       <span className='timeline-event'>Graduated and continously learning and exploring</span>
                     </div>

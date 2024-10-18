@@ -43,7 +43,7 @@ export default function MainIntroBlock() {
           {displayClick && <span className="click-me-sign text" text>Click Me</span>}
         </div>
         <div className='card back border background-reverse'>
-          <img className='card-body' src='img/card-back.JPG' onClick={handleClick} />
+          <img className='card-body' src='img/card-back.png' onClick={handleClick} />
         </div>
       </ReactCardFlip>
 

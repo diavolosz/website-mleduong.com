@@ -45,11 +45,12 @@
       .line {
         position: absolute;
         height: 3px;
-        width: 600px;
+        width: 100%;
       }
       .arrow {
+        display: none;
         position: absolute;
-        left: 89%;
+        left: 95%;
         width: 0; 
         height: 0; 
         border-top: 15px solid transparent !important;
@@ -223,6 +224,7 @@
   
     .timeline-container {
       width: 70%;
+      display: none;
   
       .dot-container {
         height: 100%;
@@ -334,12 +336,12 @@
     }
   
     .resume-container {
-      width: 30%;
+      width: 90%;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-  
+
     }
   }
   
