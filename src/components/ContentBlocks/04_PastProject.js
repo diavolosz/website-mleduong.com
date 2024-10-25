@@ -108,9 +108,24 @@ export default function PastProjectbBlock() {
 
       <div className="inner-container s3 border background-reverse">
         <div className={`image-card-left ${P3}`}>
-          <img className="gif-showcase" src='img/gifs/BBS.gif' alt='testing' onClick={handleHoverLeftP3} />
+          <img className="gif-showcase" src='img/gifs/ZENI.gif' alt='testing' onClick={handleHoverLeftP3} />
         </div>
         <div className="description-card-right background-reverse">
+          <div className='project-description-container'>
+            <div className='project-title text-reverse'> ZENI </div>
+            <div className='project-description text-reverse'>
+              A fashion marketing website where fashion meets tranquility. Zeni blends design prowess with serene aesthetics, reflecting our commitment to elegance.
+            </div>
+            <div className='button-wrapper background text'>
+              <a href='https://github.com/diavolosz/zeni-brand' className='button-to-project' target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="inner-container s4 border background-reverse">
+        <div className="description-card-left background-reverse">
           <div className='project-description-container'>
             <div className='project-title text-reverse'> BayStreetbets </div>
             <div className='project-description text-reverse'>
@@ -121,9 +136,12 @@ export default function PastProjectbBlock() {
             </div>
           </div>
         </div>
+        <div className={`image-card-right ${P4}`}>
+          <img className="gif-showcase" src='img/gifs/BBS.gif' alt='testing' onClick={handleHoverRightP4} />
+        </div>
       </div>
 
-      <div className="inner-container s4 border background-reverse">
+      {/* <div className="inner-container s4 border background-reverse">
         <div className="description-card-left background-reverse">
           <div className='project-description-container'>
             <div className='project-title text-reverse'> Jungle </div>
@@ -138,7 +156,7 @@ export default function PastProjectbBlock() {
         <div className={`image-card-right ${P4}`}>
           <img className="gif-showcase" src='img/gifs/JUN.gif' alt='testing' onClick={handleHoverRightP4} />
         </div>
-      </div>
+      </div> */}
 
     </div>
   )
