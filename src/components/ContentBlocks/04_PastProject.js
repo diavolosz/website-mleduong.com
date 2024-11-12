@@ -70,23 +70,24 @@ export default function PastProjectbBlock() {
       </div>
 
 
+
+
       <div className="inner-container s2 border background-reverse">
         <div className="description-card-left background-reverse">
           <div className='project-description-container'>
-            <div className='project-title text-reverse'> Vnote </div>
+            <div className='project-title text-reverse'> Marson's Earthwork </div>
             <div className='project-description text-reverse'>
-              a sleek, user-friendly note-taking platform designed for effortless organization, perfect for individuals and teams looking to keep their ideas and tasks.
+              A Landscaping Platform that lets users explore and customize their outdoor projects. Features an interactive quote builder with a 3D model, where the garden transforms as options are added.
             </div>
             <div className='button-wrapper background text'>
-              <a href='https://notes.voithos.app/' className='button-to-project' target="_blank">Link</a>
+              <a href='https://marsons-earthworks.com/' className='button-to-project' target="_blank">Link</a>
             </div>
           </div>
         </div>
         <div className={`image-card-right ${P2}`}>
-          <img className="gif-showcase" src='img/gifs/VNO.gif' alt='testing' onClick={handleHoverRightP2} />
+          <img className="gif-showcase" src='img/gifs/MEW.gif' alt='testing' onClick={handleHoverRightP2} />
         </div>
       </div>
-
 
       {/* <div className="inner-container s2 border background-reverse">
         <div className="description-card-left background-reverse">
@@ -117,27 +118,26 @@ export default function PastProjectbBlock() {
               A fashion marketing website where fashion meets tranquility. Zeni blends design prowess with serene aesthetics, reflecting our commitment to elegance.
             </div>
             <div className='button-wrapper background text'>
-              <a href='https://github.com/diavolosz/zeni-brand' className='button-to-project' target="_blank">GitHub</a>
+              <a href='https://zenibrand.netlify.app/' className='button-to-project' target="_blank">Link</a>
             </div>
           </div>
         </div>
       </div>
 
-
       <div className="inner-container s4 border background-reverse">
         <div className="description-card-left background-reverse">
           <div className='project-description-container'>
-            <div className='project-title text-reverse'> BayStreetbets </div>
+            <div className='project-title text-reverse'> Vnote </div>
             <div className='project-description text-reverse'>
-              A Stock Trading Platform that allow user to keep track of their stocks and portfolios. Has unique feature for trade competitions with peers to crown the winner.
+              a sleek, user-friendly note-taking platform designed for effortless organization, perfect for individuals and teams looking to keep their ideas and tasks.
             </div>
             <div className='button-wrapper background text'>
-              <a href='https://github.com/diavolosz/BayStreetBets' className='button-to-project' target="_blank">GitHub</a>
+              <a href='https://notes.voithos.app/' className='button-to-project' target="_blank">Link</a>
             </div>
           </div>
         </div>
         <div className={`image-card-right ${P4}`}>
-          <img className="gif-showcase" src='img/gifs/BBS.gif' alt='testing' onClick={handleHoverRightP4} />
+          <img className="gif-showcase" src='img/gifs/VNO.gif' alt='testing' onClick={handleHoverRightP4} />
         </div>
       </div>
 
